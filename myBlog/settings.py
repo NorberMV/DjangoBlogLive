@@ -171,24 +171,3 @@ DEFAULT_FILE_STORAGE = 'myBlog.storages.MediaStore'
 
 
 
-
-
-
-
-
-
-
-#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-"""AWS_ACCESS_KEY_ID = 'AKIAXRI6ZWF77TQM4OCM'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'blogprojectbucket' #'norbermv-crm1-bucket'
-AWS_QUERYSTRING_AUTH = False
-#AWS_S3_FILE_OVERWRITE = False
-#AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-#AWS_S3_ADDRESSING_STYLE = "virtual"
-
-AWS_S3_HOST = "s3.us-east-2.amazonaws.com"
-AWS_S3_REGION_NAME = "us-east-2"""
