@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+<title>@{{ user.username }} | Blog</title>
+{% endblock %}
+
+{% block container %}
+
+    <div class="container mb-5" style="margin-top: 8em;">
+        <div class="row">
+            <div class="col-sm-4 d-flex justify-content-center">
+                <img src="{{ user.profile.picture.url }}" alt="@{{ user.username}}" class="rounded-circle" width="150px" />
+            </div>
+            <div class="col-sm-8">
+                <h2 style="font-weight: 100;">
+                    {{ user.username }}
+                    {% if user == request.user %}
+                        <a
+                            href="{% url "users:update_profile" %}"
+                            class="ml-5 btn btn-sm btn-outline-info"
+                        >
+                            Edit profile
+                        </a>
+                    {% else %}
+                        <a
+                            href=""
+                            class="ml-5 btn btn-sm btn-primary"
+                        >
+                            Follow
+                        </a>
+                    {% endif %}
+                </h2>
+                <div class="row mt-2" style="font-size: 1.2em">
+                    <div class="col-sm-4">
+                        <b>{{ user.profile.posts_count }}785</b> posts
+                    </div>
+                    <div class="col-sm-4">
+                        <b>{{ user.profile.followers }}1,401</b> followers
+                    </div>
+                    <div class="col-sm-4">
+                        <b>{{ user.profile.following }}491</b> following
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-sm-12">
+                        <p>{{ user.profile.biography }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- To displays the posts from the loged user! -->
+
+    <div class="container" id="user-posts">
+        <div class="row mt-3">
+            {% for publicacion in publicaciones %} <!-- posts here is the loged user posts-->
+            <div class="col-sm-4 pt-5 pb-5 pr-5 pl-5 d-flex justify-content-center align-items-center">
+                <a href="{% url "posts:detailPost" publicacion.id %}" class="border">
+                    <img src="{{ publicacion.photo.url }}" alt="{{ publicacion.title }}" class="img-fluid"/>
+                    <div><p>{{ publicacion.title }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

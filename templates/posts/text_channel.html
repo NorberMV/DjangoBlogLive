@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head_content %}
+    <title>Text_channel</title>
+{% endblock%}
+
+{% block container %}
+    <body>
+        <br> <!--Adds some space!--> 
+        <br>
+        <div><h1 style='text-align: center;'>Blog Biographies!</h1></div>
+        <div class="container">
+            <div class="row">
+                {% for profile in profiles %}
+                <div class="col-sm-12 col-md-8 offset-md-2 mt-5 p-0 post-container">
+                    <div class="media pt-3 pl-3 pb-1">
+                        <a href="">
+                            <img class="mr-3 rounded-circle" height="35" src="{{ profile.picture.url }}" alt="{{ profile.user.get_full_name }}">
+                            </a>
+                            <div class="media-body">
+                            <b style="margin-top: 5px;">{{ profile.user.get_full_name }}</b>
+                        </div>
+                    </div>
+                    <div><p>&nbsp;&nbsp;&nbsp;&nbsp;{{ profile.biography }}</p>
+                    </div>
+                    <p class="mt-2 ml-3" >
+                        <a href="" style="color: #000; font-size: 20px;">
+                            <small><i class="far fa-heart"></i></small>
+                        </a> 30 likes<small><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joined since: {{ profile.created }}</b></small>
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+{% endblock %}
+  
