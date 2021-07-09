@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'myBlog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # ACCESS KEY ID: AKIAXRI6ZWF73LFB3HHK ;SECRET_KEY: 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
+        'ENGINE': 'django.db.backends.postgresql',  
         'NAME': 'demo_1',
         'USER': 'norbermv',
         'PASSWORD': os.environ.get('POSTGRES_PASSW'),
