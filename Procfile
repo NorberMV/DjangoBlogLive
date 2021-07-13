@@ -1,1 +1,1 @@
-web:guicornn myBlog.wsgi  
+web:guicornn myBlog.wsgi --log-file -
