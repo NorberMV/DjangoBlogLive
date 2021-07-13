@@ -8,7 +8,7 @@
 #*.jpg
 # Environments
 .env
-.storages.py
+storages.py
 # Django
 #db.sqlite3
 #media
