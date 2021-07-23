@@ -4,7 +4,7 @@ This is a blog app Instagram Clone project based on the Python framework Django,
 
 # Pictures
 
-<img src="https://github.com/NorberMV/Brewing_Jaguar/blob/master/beerSys.gif" width="500">
+<img src="https://github.com/NorberMV/DjangoBlogLive/blob/master/repo_pics/picBlog.gif" width="500">
 
 ## Usage
 
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
-
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
