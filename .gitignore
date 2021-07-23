@@ -6,11 +6,11 @@ __pycache__/
 
 # Media Files
 *.jpg
-static
+static/
+media/
 # Environments
 .env
 
 # Django
-
 *.sqlite3
-media
+
