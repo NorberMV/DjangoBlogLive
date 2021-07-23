@@ -9,6 +9,7 @@ This is a blog app Instagram Clone project based on the Python framework Django,
 ## Usage
 
 ```python
+# To run locally
 # Create the virtual Environment and install the dependencies
 python3 -m venv .env
 source .env/bin/activate
