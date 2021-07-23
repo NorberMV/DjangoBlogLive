@@ -4,7 +4,7 @@ This is a blog app Instagram Clone project based on the Python framework Django,
 
 # Pictures
 
-<img src="https://github.com/NorberMV/DjangoBlogLive/blob/master/repo_pics/picBlog.gif" width="700">
+<img src="https://github.com/NorberMV/DjangoBlogLive/blob/master/repo_pics/picBlog.gif" width="600">
 
 ## Usage
 
