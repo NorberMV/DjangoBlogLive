@@ -1,13 +1,16 @@
 
 # Byte-compiled / optimized / DLL files
-#__pycache__/
-#*.py[cod]
-#*$py.class
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Media Files
-#*.jpg
+*.jpg
+static
 # Environments
 .env
+
 # Django
-db.sqlite3
+
+*.sqlite3
 media
